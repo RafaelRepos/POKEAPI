@@ -1,0 +1,140 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fdfdfdb9;
+    background-image: url("https://www.transparenttextures.com/patterns/diagonales-decalees.png");    
+}
+.container{
+    max-height: 100%;
+}/*____________________LOGO Y GIF___________________-*/
+.div_imgLogo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.img_logo {
+    width: 70%;
+    margin: 0px;   
+}
+.elementos_interaccion {
+    display:flex;
+    justify-content: space-around;
+}
+.divGif{
+    max-width: 50%;
+}
+.div_btns {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.divContenedorPokemons {
+  /* background-color: rgb(158, 91, 91); */
+  margin: 20px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+/* ____________________________CARDS___________________________________*/
+.pokemon-block {/*CARD GENERAL*/
+    /* width: 150%; */
+    margin: 20px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.divImage {/**/
+    background-color: rgba(168, 161, 99, 0.774);
+    border-radius: 5px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imagen_pokemon_blob{
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+.imagen_pokemon {
+    position: absolute;
+    z-index: 1000000;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+.id_pokemon{
+    font-size: 13px;
+    margin: 5px;
+    text-align: center;
+}    
+.nombrePokemon {
+    font-size: auto;
+    margin: 5px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+/* ______________________________BOTONES PAG__________________________ */
+
+.btns_paginacion {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.anterior, .siguiente {
+    width: 150px;
+    height: 50px;
+    margin: 1px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: inset -3px -5px 5px 3px rgba(0,0,0,0.27);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fdfdfdb9;
+    background-color: #e6ac31;
+}
+.anterior:hover, .siguiente:hover {
+    width: 147px;
+    height: 48px;
+}
+  /*___________________________________QUERY___________________________*/
+@media all and (max-width:  768px) {
+    body {
+        margin: 0px;
+        padding: 0px;;
+    }
+    .fn-img_charizard {
+      max-width: 40%;
+    }    
+    .elementos_interaccion{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    .divGif{
+      display: flex;
+      justify-content: center;
+        max-width: 100%;
+    }
+    .div_btns {
+    width: auto;
+    height: 80px;
+    margin: 30px;
+    }
+    .img_logo{
+      max-height: 80%;
+      max-width: 30%;
+  }
+}
